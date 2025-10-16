@@ -10,7 +10,9 @@ After looking at DIY projects online, most seemed too time-consuming, so I decid
 
 * 🔌 **4-Channel Tuya Smart Switch (220V Wi-Fi module)** – minimal internal modifications required
   [AliExpress link](https://www.aliexpress.com/item/1005005945056792.html)
-* 🛠️ **Relay module** – reprogrammed to control fan speeds and light
+  
+* 🛠️ Relay Module – Reprogrammed to control fan speeds and light. Requires minimal hardware changes.*
+<sub>*Or no changes, if you don't mind a "spaghetti salad" of wires.</sub>
 
 ---
 
