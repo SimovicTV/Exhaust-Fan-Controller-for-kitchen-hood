@@ -93,3 +93,12 @@ This project turns a **regular kitchen range hood** into a **smart, 3-speed fan 
 
 In short, this device is a **smart, fully automated kitchen hood** that can be controlled both manually and digitally, with clear feedback, safety interlocks, and full Home Assistant integration.
 
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/8b1689ec-b2cc-4ff0-a37b-e9fccd97bbc4" />
+
+### 🔹 Key Notes
+
+* **Relay1–Relay3** → Control **fan speeds**. Only one relay can be on at a time (interlock).
+* **RelayLight** → Controls the hood **light** independently.
+* **Master Switch** → Main fan power; when off, all fan relays turn off.
+* **Buttons** → Physical control for each fan speed and light toggle. Pressing the same speed again turns the fan off.
+* **Home Assistant** → Fan speed slider and light toggle supported, plus automation integration.
