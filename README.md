@@ -104,3 +104,6 @@ In short, this device is a **smart, fully automated kitchen hood** that can be c
 * **Master Switch** → Main fan power; when off, all fan relays turn off.
 * **Buttons** → Physical control for each fan speed and light toggle. Pressing the same speed again turns the fan off.
 * **Home Assistant** → Fan speed slider and light toggle supported, plus automation integration.
+
+MASSIVE SHOUTOUT to 3ative – this project builds on their fantastic work! 👍
+https://github.com/3ative/Ultimate-Fan-Project-V4/tree/main?tab=readme-ov-file
