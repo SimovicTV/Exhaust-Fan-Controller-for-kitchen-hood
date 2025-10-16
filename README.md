@@ -1,6 +1,6 @@
 # 🏠 Smart Kitchen Hood Controller
 
-I wanted to make my kitchen a little smarter by upgrading my **regular range hood** — three fan speeds and a light — to a **smart device** I could control via **Home Assistant**, and later automate with sensors.
+I wanted to make my kitchen a little smarter by upgrading my **regular kitchen hood** — three fan speeds and a light — to a **smart device** I could control via **Home Assistant**, and later automate with sensors.
 
 After looking at DIY projects online, most seemed too time-consuming, so I decided to build a **simple, practical solution**.
 
