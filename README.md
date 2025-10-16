@@ -29,6 +29,15 @@ After looking at DIY projects online, most seemed too time-consuming, so I decid
 The full **ESPHome YAML file** is available here:
 [GitHub – aspirator-v1.2.yaml](https://github.com/SimovicTV/Exhaust-Fan-Controller-for-kitchen-hood/blob/main/aspirator-v1.2.yaml)
 
+# ❗ IMPORTANT: ADD YOUR OWN CREDENTIALS
+# Fill in your WiFi, API keys, and OTA passwords below
+# Project won't work without these!
+# 
+# Don't forget to update:
+# - WiFi SSID & Password
+# - API Keys  
+# - OTA Passwords
+
 ---
 
 ## 📸 Coming Soon
