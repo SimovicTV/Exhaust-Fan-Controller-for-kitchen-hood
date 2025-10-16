@@ -32,3 +32,64 @@ The full **ESPHome YAML file** is available here:
 ## 📸 Coming Soon
 
 I’ll be adding **photos** soon to make the setup and wiring clearer.
+
+
+## 💡 What This Device Does
+
+This project turns a **regular kitchen range hood** into a **smart, 3-speed fan with a controllable light**, fully integrated with **Home Assistant**. You can control it both via physical buttons and through the Home Assistant interface, including automations and sliders.
+
+### ⚙️ Main Features
+
+1. **Fan Speed Control**
+
+   * The hood has **three fan speeds**.
+   * Each speed is controlled by a separate **relay** (`relay1`, `relay2`, `relay3`) so only one speed is active at a time.
+   * A **master switch** ensures only one relay is active and controls the overall fan power.
+
+2. **Light Control**
+
+   * The hood’s built-in light can be toggled independently via a dedicated **relay** (`lightfan`).
+   * Controlled either through a physical button or Home Assistant.
+
+3. **Physical Buttons**
+
+   * Buttons are mapped to:
+
+     * **Fan speed 1, 2, or 3**
+     * **Light toggle**
+   * Pressing a button sets the corresponding speed or toggles the light. Pressing the same speed button again turns the fan off.
+
+4. **Home Assistant Integration**
+
+   * A **slider** in Home Assistant allows you to select the fan speed (1–3).
+   * Automations and sensors can control the fan via the **master switch** and `apply_speed` script.
+   * The system updates instantly and optimistically, meaning changes are reflected in Home Assistant even before confirmation from the device.
+
+5. **Scripts and Logic**
+
+   * `apply_speed`: Central handler that sets the correct relay for the chosen speed.
+   * `set_speed_1/2/3`: Scripts triggered by physical buttons to update the speed and master switch.
+   * Master switch (`master`): Controls whether the fan is on or off. When off, all relays turn off.
+
+6. **Safety & Reliability**
+
+   * **Interlock** ensures only one fan relay can be on at a time, preventing multiple speeds from being activated simultaneously.
+   * **Debounce filters** on physical buttons prevent accidental double presses.
+
+7. **Status Reporting**
+
+   * Device reports **Wi-Fi info**, **IP**, **MAC address**, and **ESPHome version** via text sensors.
+
+---
+
+### 🛠 How It Works
+
+* When you press a **speed button**, the corresponding script sets the `fanspeed` number and toggles the **master switch**.
+* The `apply_speed` script then turns on the correct relay (`relay1`, `relay2`, or `relay3`) for the chosen speed and ensures the other relays are off.
+* Pressing the **light button** toggles the `lightfan` relay without affecting the fan speed.
+* The fan can also be controlled directly from Home Assistant via the **slider** or automations.
+
+---
+
+In short, this device is a **smart, fully automated kitchen hood** that can be controlled both manually and digitally, with clear feedback, safety interlocks, and full Home Assistant integration.
+
