@@ -45,10 +45,25 @@ The full **ESPHome YAML file** is available here:
 
 ---
 
-## 📸 Coming Soon
+## ⚡ Hardware Modifications
 
-I’ll be adding **photos** soon to make the setup and wiring clearer.
+To adapt the 4-channel Tuya relay module for use with the kitchen hood, I made a few simple internal and wiring modifications:
 
+1. **Phase (L) Bridging:**
+   The live wire (phase) from the input was bridged to the **common terminals** of all relays on the PCB.
+
+2. **Neutral (N) Connection:**
+   On the **fourth relay** (used for the light), I disconnected the original **NC contact** (cut the PCB trace) and reconnected it to **neutral (N)** instead.
+
+3. **Button Conversion:**
+   The original wall switch was replaced with **momentary push buttons**, which were wired **in parallel** with the onboard buttons on the relay module.
+
+4. **LED Indicators:**
+   Each **speed indicator LED** is connected in parallel with its corresponding **fan relay**, so the LED lights up when that speed is active.
+
+These small hardware changes allow the module to safely and correctly control all three fan speeds and the light, while also providing visual feedback through the LEDs.
+
+---
 
 ## 💡 What This Device Does
 
