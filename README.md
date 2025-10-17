@@ -1,4 +1,4 @@
-# 🏠 Smart Kitchen Hood Controller
+# 🏠 GORENJE Smart Kitchen Hood Controller
 
 I wanted to make my kitchen a little smarter by upgrading my **regular kitchen hood** — three fan speeds and a light — to a **smart device** I could control via **Home Assistant**, and later automate with sensors.
 
