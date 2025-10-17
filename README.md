@@ -4,6 +4,9 @@ I wanted to make my kitchen a little smarter by upgrading my **regular kitchen h
 
 After looking at DIY projects online, most seemed too time-consuming, so I decided to build a **simple, practical solution**.
 
+[<img src="images/screenshot_small.png" width="300">]([images/screenshot_large.png](https://github.com/SimovicTV/Exhaust-Fan-Controller-for-kitchen-hood/blob/main/Pictures/hood.jpg))
+
+
 ---
 
 ## ⚡ Components Used
