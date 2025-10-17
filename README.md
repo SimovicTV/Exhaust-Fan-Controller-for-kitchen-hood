@@ -6,7 +6,10 @@ After looking at DIY projects online, most seemed too time-consuming, so I decid
 
 <img src="https://github.com/SimovicTV/Exhaust-Fan-Controller-for-kitchen-hood/blob/main/Pictures/hood.jpg" width="300">
 
-
+<p float="left">
+  <img src="https://github.com/SimovicTV/Exhaust-Fan-Controller-for-kitchen-hood/blob/main/Pictures/hood.jpg" width="200">
+  <img src="https://github.com/SimovicTV/Exhaust-Fan-Controller-for-kitchen-hood/blob/main/Pictures/4relay.jpg" width="200" />
+</p>
 
 ---
 
