@@ -1,0 +1,35 @@
+type: vertical-stack
+cards:
+  - type: custom:button-card
+    entity: switch.aspirator_fan_kitchen_master
+    triggers_update: all
+    name: |
+      [[[ return entity.entity_id.slice(21).charAt().toUpperCase() +
+          entity.entity_id.slice(22,-7) + " Fan" ]]]
+    state:
+      - value: "on"
+        styles:
+          card:
+            - background: radial-gradient(circle, rgb(0,0,0, 10%), rgb(18, 81, 219, 60%))
+            - box-shadow: 0px 0px 20px rgb(31, 128, 240, 0)
+          icon:
+            - animation: |
+                [[[
+                  var name = "number.aspirator_fan_" + entity.entity_id.slice(21).charAt() + entity.entity_id.slice(22,-7) + "_speed"
+                  const speed = parseInt(states["number.aspirator_fan_kitchen_speed"].state);
+                  if (speed === 1) return 'rotating 3s linear infinite';
+                  if (speed === 2) return 'rotating 1s linear infinite';
+                  if (speed === 3) return 'rotating .5s linear infinite';
+                  return 'none';
+                ]]]
+    double_tap_action:
+      action: more-info
+      entity: |
+        [[[
+          return "number.aspirator_fan_" + entity.entity_id.slice(21).charAt() + entity.entity_id.slice(22,-7) + "_speed"
+        ]]]
+  - type: entities
+    entities:
+      - entity: number.aspirator_fan_kitchen_speed
+        name: Speed
+      - entity: switch.aspirator_fan_light_kitchen
